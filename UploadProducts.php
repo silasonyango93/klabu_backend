@@ -21,7 +21,7 @@ include 'fireBaseFunctions.php';
  
  //$server_ip = gethostbyname(gethostname());
  
- $actualpath = "https://www.zebaki.co.ke/Klabu/$path";
+ $actualpath = "http://35.225.7.228/klabu_backend/$path";
 	  
 	  $sql = "INSERT INTO `products` (`ProductId`, `id`, `ProductType`, `ProductMake`, `ProductColour`, `Price`, `OtherDescriptions`, `ProductImageUrl`, `ActualImage`, `UploadTime`, `Category`) VALUES (NULL, '$id', '$ProductType', '$ProductMake', '$ProductColour', '$Price', '$OtherDescriptions', '$actualpath', '$ImageId', NOW(), '$Category')"; 
 	   if(mysqli_query($connection,$sql)){
